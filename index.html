@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="Icon" href="assets/icons/bank (2).png">
+  <title>MyBank Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <input type="checkbox" id="darkModeToggle" hidden />
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <div class="brand">
+        <img src="assets/icons/bank (2).png" alt="Bank Icon" class="brand-icon" />
+        <h2>MyBank</h2>
+      </div>
+      <div class="profile">
+        <img src="assets/images/abstract-user-flat-4.png" alt="Profile" />
+        <p>Welcome, User</p>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html" class="active">Dashboard</a></li>
+          <li><a href="transactions.html">Transactions</a></li>
+        </ul>
+      </nav>
+      <label for="darkModeToggle" class="theme-toggle">
+        <span class="toggle-switch"></span> Dark Mode
+      </label>
+    </aside>
+    <main class="main-content">
+      <div class="topbar">
+        <h1>Dashboard</h1>
+      </div>
+      <section class="accounts">
+        <div class="card">
+          <h3>Account 1</h3>
+          <p class="account-number">**** 1234</p>
+          <p class="balance">₾ 5,800.00</p>
+        </div>
+        <div class="card">
+          <h3>Account 2</h3>
+          <p class="account-number">**** 5678</p>
+          <p class="balance">₾ 2,400.50</p>
+        </div>
+        <div class="card">
+          <h3>Account 3</h3>
+          <p class="account-number">**** 9101</p>
+          <p class="balance">₾ 9,120.75</p>
+        </div>
+      </section>
+      <section class="spending">
+        <h2>This Month's Spending</h2>
+        <div class="progress-bar">
+          <div class="progress" style="width: 65%;"></div>
+        </div>
+        <p>Total spent: ₾ 3,200.00</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

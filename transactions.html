@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="Icon" href="assets/icons/bank (2).png">
+  <title>Transactions</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <input type="checkbox" id="darkModeToggle" hidden />
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <div class="brand">
+        <img src="assets/icons/bank (2).png" alt="Bank Icon" class="brand-icon" />
+        <h2>MyBank</h2>
+      </div>
+      <div class="profile">
+        <img src="assets/images/abstract-user-flat-4.png" alt="Profile" />
+        <p>Welcome, User</p>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="transactions.html" class="active">Transactions</a></li>
+        </ul>
+      </nav>
+      <label for="darkModeToggle" class="theme-toggle">
+        <span class="toggle-switch"></span> Dark Mode
+      </label>
+    </aside>
+    <main class="main-content">
+      <div class="topbar">
+        <h1>Transactions</h1>
+      </div>
+      <section class="transactions">
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Description</th>
+              <th>Amount</th>
+              <th>Category</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2025-07-10</td>
+              <td>Groceries</td>
+              <td class="negative">₾ 150.75</td>
+              <td>Food</td>
+            </tr>
+            <tr>
+              <td>2025-07-09</td>
+              <td>Bus Ticket</td>
+              <td class="negative">₾ 20.00</td>
+              <td>Transport</td>
+            </tr>
+            <tr>
+              <td>2025-07-08</td>
+              <td>Movie Night</td>
+              <td class="negative">₾ 40.00</td>
+              <td>Entertainment</td>
+            </tr>
+            <tr>
+              <td>2025-07-07</td>
+              <td>Salary</td>
+              <td class="positive">₾ 1,500.00</td>
+              <td>Income</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="spending">
+          <h2>Spending Breakdown</h2>
+          <div class="pie-chart"></div>
+          <div class="pie-legend">
+            <div><span class="color-box legend-food"></span> Food</div>
+            <div><span class="color-box legend-transport"></span> Transport</div>
+            <div><span class="color-box legend-entertainment"></span> Entertainment</div>
+            <div><span class="color-box legend-income"></span> Income</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
